@@ -22,6 +22,7 @@ const players = {
 };
 
 const randomNumBtw = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
 const switchPlayers = () => {
     nextTurnBtn.disabled = true;
     Object.keys(players).forEach(player => players[player].turn = !players[player].turn);
@@ -59,6 +60,7 @@ const nextTurn = (resetCurrentResult = false, resetUserScore = false) => {
 
     (!resetCurrentResult && !resetUserScore) && (tempDiceResult = [0, 0]);
     resetUserScore ? (players[activeUser].score = 0) : (players[activeUser].score += points);
+
     switchPlayers();
     renderData();
 };
