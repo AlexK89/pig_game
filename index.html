@@ -12,23 +12,23 @@
 <body>
 <main class="game">
     <header class="game__players">
-        <div class="game__players__player_1">
+        <div class="game__players__player js-players" data-user="player_1">
             <h3>Player 1</h3>
-            <p class="game__players__player_1__score score">0</p>
+            <p class="game__players__player__score js-score">0</p>
         </div>
-        <div class="game__players__player_2">
+        <div class="game__players__player js-players" data-user="player_2">
             <h3>Player 2</h3>
-            <p class="game__players__player_2__score score">0</p>
+            <p class="game__players__player__score js-score">0</p>
         </div>
     </header>
     <div class="game__dices">
-        <p class="game__dices__dice">1</p>
-        <p class="game__dices__dice">1</p>
+        <p class="game__dices__dice js-dice"></p>
+        <p class="game__dices__dice js-dice"></p>
     </div>
     <div class="game__btns">
         <button class="btn btn_new" id="js-new_game">New game</button>
-        <button class="btn btn_next" id="js-next_turn">Next turn</button>
-        <button class="btn btn_dice" id="js-though_dices">Through Dices</button>
+        <button class="btn btn_next" id="js-next_turn" disabled>Next turn</button>
+        <button class="btn btn_dice" id="js-through_dices" disabled>Through Dices</button>
     </div>
 </main>
 </body>
